@@ -12,6 +12,8 @@ from tg_bot.modules.users import get_user_id
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
+tg_bot_IMG = "https://telegra.ph/file/50e8c3646029e4b097b86.jpg"
+
 
 @run_async
 def afk(bot: Bot, update: Update):
@@ -22,7 +24,7 @@ def afk(bot: Bot, update: Update):
         reason = ""
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} is now AFK!".format(update.effective_user.first_name))
+    update.effective_message.reply_photo(tg_bot_IMG, "{} 😂😂 ആരും കണ്ടില്ല 😂😂".format(update.effective_user.first_name))
 
 
 @run_async
@@ -34,7 +36,7 @@ def no_longer_afk(bot: Bot, update: Update):
 
     res = sql.rm_afk(user.id)
     if res:
-        update.effective_message.reply_text("{} is no longer AFK!".format(update.effective_user.first_name))
+        update.effective_message.reply_photo("{} 😂😂 ആരും കണ്ടില്ല 😂😂".format(update.effective_user.first_name))
 
 
 @run_async
