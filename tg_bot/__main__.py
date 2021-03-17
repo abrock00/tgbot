@@ -18,7 +18,19 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-HI {}, MY NAME IS  {}
+ʜɪ  {} ᴍʏ ɴᴀᴍᴇ ɪs  {}
+
+✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶
+
+🌸 ᴤᴘᴇᴀᴋ ᴏɴʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴤᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴡᴏʀᴅᴤ ᴀʀᴇ
+🌸 ʙᴇᴛᴛᴇʀ ᴛʜᴀɴ ʏᴏᴜʀ ᴤɪʟᴇɴᴄᴇ 
+
+🌼 ᴍᴀᴛᴜʀɪᴛʏ ᴅᴏᴇᴤ ɴᴏᴛ ᴍᴇᴀɴ ᴀɢᴇ. ɪᴛ’ᴤ ᴤᴇɴᴤɪᴛɪᴠɪᴛʏ, ʙᴇʜᴀᴠɪᴏʀ,
+🌼 ᴀɴᴅ ʜᴏᴡ ʏᴏᴜ ʀᴇᴀᴄᴛ.
+
+                   ✨⚊❮❮᚜ ✫ ʍɨʟʟɨɛ ๖օ๖๖ʏ ✫ ᚛❯❯⚊✨
+
+✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶
 """
 
 tg_bot_IMG = "https://telegra.ph/file/44ddc055f122ca0b045a2.jpg"
