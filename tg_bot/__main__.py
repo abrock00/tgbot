@@ -22,11 +22,11 @@ PM_START_TEXT = """
 
 ✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶
 
-🌸 ᴤᴘᴇᴀᴋ ᴏɴʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴤᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴡᴏʀᴅᴤ ᴀʀᴇ
-🌸 ʙᴇᴛᴛᴇʀ ᴛʜᴀɴ ʏᴏᴜʀ ᴤɪʟᴇɴᴄᴇ 
+♱ ᴤᴘᴇᴀᴋ ᴏɴʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴤᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴡᴏʀᴅᴤ ᴀʀᴇ
+♱ ʙᴇᴛᴛᴇʀ ᴛʜᴀɴ ʏᴏᴜʀ ᴤɪʟᴇɴᴄᴇ 
 
-🌼 ᴍᴀᴛᴜʀɪᴛʏ ᴅᴏᴇᴤ ɴᴏᴛ ᴍᴇᴀɴ ᴀɢᴇ. ɪᴛ’ᴤ ᴤᴇɴᴤɪᴛɪᴠɪᴛʏ, ʙᴇʜᴀᴠɪᴏʀ,
-🌼 ᴀɴᴅ ʜᴏᴡ ʏᴏᴜ ʀᴇᴀᴄᴛ.
+♱ ᴍᴀᴛᴜʀɪᴛʏ ᴅᴏᴇᴤ ɴᴏᴛ ᴍᴇᴀɴ ᴀɢᴇ. ɪᴛ’ᴤ ᴤᴇɴᴤɪᴛɪᴠɪᴛʏ, ʙᴇʜᴀᴠɪᴏʀ,
+♱ ᴀɴᴅ ʜᴏᴡ ʏᴏᴜ ʀᴇᴀᴄᴛ.
 
                    ✨⚊❮❮᚜ ♰ ᗪ૯ค੮ɧ ῳơƖŦ ♱ ᚛❯❯⚊✨
 
@@ -152,10 +152,10 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text=" SUPPORT GROUP ", url="https://t.me/HCF_CHAT".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🔶 รยקק๏гt ցг๏ยק 🔶", url="https://t.me/hcf_binge".format(bot.username)) ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text(" i am not ded")
 
 
 # for test purposes
