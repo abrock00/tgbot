@@ -28,12 +28,12 @@ PM_START_TEXT = """
 🌼 ᴍᴀᴛᴜʀɪᴛʏ ᴅᴏᴇᴤ ɴᴏᴛ ᴍᴇᴀɴ ᴀɢᴇ. ɪᴛ’ᴤ ᴤᴇɴᴤɪᴛɪᴠɪᴛʏ, ʙᴇʜᴀᴠɪᴏʀ,
 🌼 ᴀɴᴅ ʜᴏᴡ ʏᴏᴜ ʀᴇᴀᴄᴛ.
 
-                   ✨⚊❮❮᚜ ✫ ʍɨʟʟɨɛ ๖օ๖๖ʏ ✫ ᚛❯❯⚊✨
+                   ✨⚊❮❮᚜ ♰ ᗪ૯ค੮ɧ ῳơƖŦ ♱ ᚛❯❯⚊✨
 
 ✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶✶⊶⊷⊶⊷❍⊶⊶⊷✶
 """
 
-tg_bot_IMG = "https://telegra.ph/file/44ddc055f122ca0b045a2.jpg"
+tg_bot_IMG = "https://telegra.ph/file/d3d159ff56fa8a3a5059f.jpg"
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
