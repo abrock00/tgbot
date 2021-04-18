@@ -82,12 +82,7 @@ def filters(bot: Bot, update: Update):
         else:
             chat_name = chat.title
 
-      if len(args) < 2:
-        return
 
-
-            )
-            return
   # set trigger -> lower, so as to avoid adding duplicate filters with different cases
     keyword = extracted[0].lower()
 
