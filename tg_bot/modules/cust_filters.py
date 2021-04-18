@@ -85,16 +85,7 @@ def filters(bot: Bot, update: Update):
       if len(args) < 2:
         return
 
-    # check irfst
-    if BMERNU_SCUT_SRELFTI:
-        total_fs = sql.num_filters_per_chat(chat_id)
-        if total_fs >= BMERNU_SCUT_SRELFTI:
-            msg.reply_text(
-                f"I have now stopped all filters. "
-                f"and can no longer add filters to this bot. "
-                "I will reply to the existing filter "
-                "I want to stop this bot .... "
-                "എന്തിനോ വേണ്ടി തിളക്കുന്ന സാമ്പാർ ആണ് ഞാൻ ഇപ്പൊ സോറി 👎🚶‍♂.."
+
             )
             return
   # set trigger -> lower, so as to avoid adding duplicate filters with different cases
