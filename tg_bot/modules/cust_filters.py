@@ -82,8 +82,26 @@ def filters(bot: Bot, update: Update):
         else:
             chat_name = chat.title
 
+    if len(args) < 2:
+        return
 
-  # set trigger -> lower, so as to avoid adding duplicate filters with different cases
+    # check irfst
+    if BMERNU_SCUT_SRELFTI:
+        total_fs = sql.num_filters_per_chat(chat_id)
+        if total_fs >= BMERNU_SCUT_SRELFTI:
+            msg.reply_text(
+                f"You currently have {total_fs} filters. "
+                f"The maximum number of filters allowed is {BMERNU_SCUT_SRELFTI}. "
+                "You need to delete some filters "
+                "before being allowed to add more "
+                "or use @kochufilterbot for unlimited filters."
+            )
+            return
+
+    extracted = split_quotes(args[1])
+    if len(extracted) < 1:
+        return
+    # set trigger -> lower, so as to avoid adding duplicate filters with different cases
     keyword = extracted[0].lower()
 
     is_sticker = False
@@ -252,7 +270,7 @@ def reply_filter(bot: Bot, update: Update):
                         message.reply_text("You seem to be trying to use an unsupported url protocol. Telegram "
                                            "doesn't support buttons for some protocols, such as tg://. Please try "
                                            "again, or ask in @KeralaBots for help.")
-                    elif excp.message == "Reply message not found":
+                    elif excp.message == "Replied message not found":
                         bot.send_message(chat.id, filt.reply, parse_mode=ParseMode.MARKDOWN,
                                          disable_web_page_preview=True,
                                          reply_markup=keyboard)
